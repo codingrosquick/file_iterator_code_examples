@@ -42,6 +42,6 @@ python3 example_name.py
 
 # Useful Links
 
-*GitHub repository of the circles_file_iterator package:* https://github.com/codingrosquick
+*GitHub repository of the circles_file_iterator package:* https://github.com/codingrosquick/circles_file_handler/
 
 *PyPI page of the circles_file_iterator package:* https://pypi.org/project/circles-file-iterator/
