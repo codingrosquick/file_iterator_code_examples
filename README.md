@@ -3,10 +3,17 @@ This package provides code examples for the file iterator package.
 The ```circles_file_iterator``` package provides classes and utility functions for handling file interactions with CIRCLES CyVerse.
 
 It allows:
+
+*(version 1.0.4)*
 - Communication with CyVerse's fileshare (ls, cd, pwd)
 - I/O Commands through IRODS
 - Iterating over files from CyVerse
 - Cache handling
+
+*(version 1.1.1)*
+- Detect event in a CAN file
+- Build an analysis of all the events in the files listed in a file iteration
+
 
 # Installation
 
@@ -29,7 +36,7 @@ It will ask for some information, fill it out and it should be fine.
 *WARNING 2:* Run those commands from the folder's base (here, from ```/file_iterator_code_examples/```).
 
 ### Configure IRODS CLI
-Then, you may need to install IRODS CLI (if not already done) on your computer by running:
+Then, you may need to install IRODS CLI (if not already installed on your system) on your computer by running:
 
 ##### (On linux)
 
