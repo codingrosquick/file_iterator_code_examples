@@ -111,8 +111,8 @@ By calling the next() method of the file iterator, it:
 For the demonstration of this file, we will simply print out the filename and not process them.
 
 NOTE: here, we can use the file iterator on CAN/GPS file couples. For the purposes of this
-explanation, we show how to do wiht or without the GPS file by setting the flag
-ignore_gps_file=False or True when downloading a new file.
+explanation, we show how to do without the GPS file by setting the flag ignore_gps_file=True when
+downloading a new file.
 '''
 print('\n------------------------ ITERATING OVER THE FILES ------------------------\n')
 
@@ -125,15 +125,7 @@ for _ in range(FileIterator.max_index):
 print(f'\nThe iteration over the files (only CAN) is finished.')
 
 FileIterator.reset()
-print('\nThe File Iterator has been reset')
-
-print('\With downloading of the GPS Files')
-for _ in range(FileIterator.max_index):
-    local_file_path = loop.run_until_complete(FileIterator.next(ignore_gps_file=False, verbose=True))
-    # --- THIS IS WHERE YOU CAN MAKE YOUR FILE PROCESSING ---
-    print(f'\nCurrent local address of the downloaded file is: {local_file_path}.\n\
-        It will now be deleted before downloading the next file.')
-print(f'\nThe iteration over the files (CAN+GPS) is finished.')
+print(f'\nThe File Iterator has been reset. Its index is now: {FileIterator.index}')
 
 
 # ------------------ clear the cache ------------------
